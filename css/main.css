@@ -1,3 +1,36 @@
+.intro {
+	margin-bottom: 2em;
+}
+
+.post {
+	font-size: 1.44em;
+	font-family: 'Habibi', serif;
+}
+
+.post-footer {
+	font-size: 1.25rem;
+	font-family: sans-serif;
+	color: gray;
+}
+
+.expandee {
+	display: none;
+}
+
+.intro-summary {
+	font-size: 2rem;
+	color: gray;
+}
+
 .after-header {
 	padding-top: 50px;
+}
+
+.sidebar-module {
+	margin-bottom: 2.0em;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+.about {
+	background: #eee;
 }

@@ -4,13 +4,27 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Home</title>
-		<link rel="stylesheet" href="./blog/css/main.css" >
+		<title>Chris' Blog</title>
+		<link href='http://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/css/main.css" >
 		<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$(".expando").each(function() {
+					var me = $(this);
+					var ee = me.data('expandee');
+					console.log(ee);
+					$(this).click(function() {
+						var el = $("#" + ee).toggle();
+						me.html(el.is(":visible") ? "&lt;&lt;&lt;" : "&gt;&gt;&gt;");	
+					});
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -38,13 +52,72 @@
 			</div>
 		</div>
 
-<div class='container' class='after-header'>
+<div class='container after-header'>
 	<div class='row'>
-		<div class='col-md-12'>
-			<h1>Home</h1>
-			Here's some content.
+		<div class='col-sm-12 intro'>
+			<h1>Chris' Blog</h1>
+			<div class='intro-summary'>
+				I am just some guy; one in a million.<br />
+				If you're here, you're probably a friend who got bored...
+				<div id='more-intro' class='expandee'>
+				<hr />
+				<p>
+				What's new? Call me up! Let's go have a coffee! Not feeling social? That's okay, too - some other time.
+				Anyway, feel free to peruse my wildly random musings, poetry, and a few, exotic hobby projects. Maybe check out my
+				<a href='cdibbs.github.io/folproof' title='FOLProof'>First-Order Logic language and as-you-type verifier</a>. Not
+ 				your sort of hobby? How about some poetry inspired by random friends, dreams, and so forth?
+				</p>
+				<p>
+				Thanks for stopping by. Enjoy!
+				</p>
+				</div>
+				<a href='#' title='Well, are ya...?' class='expando' data-expandee='more-intro'>&gt;&gt;&gt;</a>
+			</div>
+		</div>
+		<div class='col-sm-8'>
+			
+	<div class='post'>
+		<h3><a href='/poetry/2014/04/19/coastline.html'>Coastline</a></h3>
+		<p><pre>
+Walking along the coastline,
+with this warm and gentle sunshine,
+a breeze tickles through her hair,
+her son whistles a song on the air.</p>
+
+		<div class='post-footer'>
+			Posted: 2014-04-19 15:21:00 -0500
+		</div>
+	</div>
+
+	<div class='post'>
+		<h3><a href='/firsts/2014/04/19/first-post.html'>First post!</a></h3>
+		<p>Rather than spam everyone on Facebook, I figure a blog is a much better way to express myself. Fortunately, github
+had the easy remedy, this time: simply push html (<a href="http://jekyllrb.com">or Jekyll</a>) to a gh-pages branch, and watch your blog
+show up at username.github.io/project. Pretty cool!</p>
+
+		<div class='post-footer'>
+			Posted: 2014-04-19 13:44:49 -0500
+		</div>
+	</div>
+
 
 		</div>
+					<div class='col-sm-3 col-sm-offset-1 sidebar'>
+			<div class='sidebar-module about'>
+				<h4>About</h4>
+				I am a programmer and graduate student at the University of Iowa. My interests
+				include God, friends, service, human languages, designing computer languages,
+				logic, fitness, nature and outdoor adventures, and capturing all of the above
+				in writing and pictures.				
+			</div>
+			<div class='sibebar-module '>
+				<h4>Overview</h4>
+			</div>
+			<div class='sibebar-module '>
+				<h4>Where Am I?</h4>
+			</div>
+		</div>
+
 	</div>
 </div>
 </body>

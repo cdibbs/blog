@@ -5,12 +5,26 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" >
+		<link href='http://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{ site.baseurl }}css/main.css" >
 		<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
 		{{ page.styles }}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		{{ page.scripts }}
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$(".expando").each(function() {
+					var me = $(this);
+					var ee = me.data('expandee');
+					console.log(ee);
+					$(this).click(function() {
+						var el = $("#" + ee).toggle();
+						me.html(el.is(":visible") ? "&lt;&lt;&lt;" : "&gt;&gt;&gt;");	
+					});
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">

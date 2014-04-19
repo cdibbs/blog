@@ -1,4 +1,4 @@
 name: Baby's First Blog
 markdown: redcarpet
 pygments: true
-baseurl: blog
+baseurl: /blog/
