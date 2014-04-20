@@ -2,3 +2,4 @@ name: Baby's First Blog
 markdown: redcarpet
 pygments: true
 baseurl: /
+category-list: [code, god, poetry, school]

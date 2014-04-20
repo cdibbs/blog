@@ -7,6 +7,34 @@
 	font-family: 'Habibi', serif;
 }
 
+p {
+	font-size: 1.44em;
+	font-family: 'Habibi', serif;
+}
+
+.bible-quote {
+	font-size: 1.44em;
+	background: #eee;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	margin: 1em;
+	padding: 1em;
+	padding-left: 3em;
+	position: relative;
+}
+
+.bible-quote .source {
+	margin-top: 1em;
+	float: right;
+	clear: left;
+}
+
+.bible-quote span:first-child{
+	font-size: 500%;
+	position: absolute;
+	top: -.1em; left: .1em;
+}
+
 .post-footer {
 	font-size: 1.25rem;
 	font-family: sans-serif;

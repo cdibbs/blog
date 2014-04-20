@@ -6,9 +6,9 @@ title: Chris' Blog
 	<div class='post'>
 		<h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
 		{{ post.excerpt }}
-		<a href='{{ post.url }}'>&gt;&gt;&gt;</a>
 		<div class='post-footer'>
-			Posted: {{ post.date }}
+			Posted: {{ post.date }} | 
+			<a href='{{ post.url }}'>Read the full post</a>
 		</div>
 	</div>
 {% endfor %}
