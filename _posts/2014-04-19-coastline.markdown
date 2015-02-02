@@ -8,7 +8,7 @@ categories: poetry
 Walking along the coastline,<br />
 with this warm and gentle sunshine,<br />
 a breeze tickles through her hair,<br />
-her son whistles a song on the air.
+her son singing a song on the air.
 
 
 </p>
@@ -25,7 +25,7 @@ slide softly under her palm,<br />
 and on her cheek,<br />
 a quick, gentle touch of the lips,<br />
 while, her hand in his,<br /> caressing,<br />
-our boy's still whistling that song.
+our boy's still singing that song.
 </p>
 <p>
 Along the sand-dusted sidewalks they stroll,<br />
